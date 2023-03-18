@@ -15,8 +15,8 @@ def test_logs_parser(FILE_NAME):
         tc_flag,dns_flag,pass_flag,fail_flag= 0,0,0,0
         for num,line in enumerate(f):
             tc_flag = 1
-            if "suite" in line:
-                dictionary2["suite_name"] = (line.split("")[1]).split("")[0]
+            if "SUITE" in line:
+                dictionary2["suite_name"] = (line.split("NAME")[1])
             if ("  TC" in line or "TESTCASE" in line) and tc_flag>0:
                 tc_name = ""
                 if "  TC" in line:
