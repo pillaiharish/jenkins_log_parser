@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JSON to HTML Report</title>
+  <style>    
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: lightblue;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .pass {
+            color: green;
+            font-weight: bold;
+        }
+        
+        .fail {
+            color: red;
+            font-weight: bold;
+        }
+        
+  </style>
+</head>
+<body>
+  <h1>Suite name: {{data.suite_name}}</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Test Case Name</th>
+        <th>DNSREQ</th>
+        <th>PASS</th>
+        <th>FAIL</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data.test_cases %}
+      <tr>
+        <td>{{ item.testcase }}</td>
+        <td>{{ item.dnsrequests }}</td>
+        <td><span class="pass">{{ item.pass }}</span></td>
+        <td><span class="fail">{{ item.fail }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html> 
