@@ -26,8 +26,10 @@ The file test_log_generator.py is used to generate testruns.log file which conta
 INFO:root:Total test cases: 60
 INFO:root: HTML report generated successfully...
 
+![newmov](https://user-images.githubusercontent.com/12826131/226104890-7b84a7e0-5930-400f-a0e8-239f2e223259.gif)
 
 
-https://user-images.githubusercontent.com/12826131/226104639-e4f3b5cb-3384-49f4-810d-30a63932f379.mov
+
+#https://user-images.githubusercontent.com/12826131/226104639-e4f3b5cb-3384-49f4-810d-30a63932f379.mov
 
 
