@@ -5,11 +5,25 @@ The file test_log_generator.py is used to generate testruns.log file which conta
 
 
 (.venv) root:jenkins_log_parser harishkumar$ git clone git@github.com:pillaiharish/jenkins_log_parser.git
+
+
 (.venv) root:jenkins_log_parser harishkumar$ cd jenkins_log_parser/
+
+
 (.venv) root:jenkins_log_parser harishkumar$ pyenv exec python -m venv .venv
+
+
 (.venv) root:jenkins_log_parser harishkumar$ source .venv/bin/activate
+
+
 (.venv) root:jenkins_log_parser harishkumar$ pip install requirements.txt
+
+
 (.venv) root:jenkins_log_parser harishkumar$ python test_log_generator.py 
+
+
 (.venv) root:jenkins_log_parser harishkumar$ python report_json_to_html.py
 INFO:root:Total test cases: 60
 INFO:root: HTML report generated successfully...
+
+
