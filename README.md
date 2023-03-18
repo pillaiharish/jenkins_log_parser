@@ -27,3 +27,7 @@ INFO:root:Total test cases: 60
 INFO:root: HTML report generated successfully...
 
 
+
+https://user-images.githubusercontent.com/12826131/226104639-e4f3b5cb-3384-49f4-810d-30a63932f379.mov
+
+
